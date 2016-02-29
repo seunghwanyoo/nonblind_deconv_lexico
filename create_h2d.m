@@ -1,5 +1,12 @@
 function [h_2d] = create_h2d(x_2d,h0_2d)
 % Given small 2D blur kernel, expand to the image size
+% Input:
+%   x_2d: 2D image
+%   h0_2d: 2D (blur) kernel
+% Output:
+%   h_2d: 2D kernel with the size of x_2d
+%
+% Author: Seunghwan Yoo
 
 [m,n] = size(x_2d);
 h1 = zeros(m,n);

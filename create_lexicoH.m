@@ -1,5 +1,13 @@
 function [H,h_2d] = create_lexicoH(x_2d,h0_2d)
 % Given 2D blur kernel, create the linear operator matrix H
+% Input:
+%   x_2d: 2D image
+%   h0_2d: 2D (blur) kernel
+% Output:
+%   H: operation matrix H with lexicographic notation
+%   h_2d: 2D kernel with the size of x_2d
+%
+% Author: Seunghwan Yoo
 
 disp('create_lexicoH()');
 [m,n] = size(x_2d);
