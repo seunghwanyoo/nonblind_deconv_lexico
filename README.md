@@ -12,7 +12,7 @@
 - Deconvolution: <br />
    (1) Least Squares (LS) method: <br />
         min_x 0.5||y-Hx||2 <br />
-   (2) Constrained Least Squares (CLS): <br />
+   (2) Regularized Least Squares (RLS): <br />
         min_x 0.5||y-Hx||2 + 0.5*lambda*||Cx||2 <br />
 
 * Both deconvolution methods are implemented in two ways - pseudo-inverse, and iterative method. 
